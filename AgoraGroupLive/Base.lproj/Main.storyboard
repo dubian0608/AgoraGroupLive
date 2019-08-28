@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vk8-3i-T5l">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="Ktx-Di-DNX">
+            <objects>
+                <viewController id="vk8-3i-T5l" customClass="MainViewController" customModule="AgoraGroupLive" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nT5-S4-BYB"/>
+                        <viewControllerLayoutGuide type="bottom" id="WXA-r2-gUi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cTx-5t-1sF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGH-7Z-YpA">
+                                <rect key="frame" x="321" y="20" width="54" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="HHT-S7-w6c"/>
+                                    <constraint firstAttribute="height" constant="54" id="biP-Jf-cHp"/>
+                                </constraints>
+                                <state key="normal" image="btn_setting"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Open Live!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6Z-ft-JxF">
+                                <rect key="frame" x="99" y="110" width="177" height="20.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="32zj" borderStyle="roundedRect" placeholder="Input name of Live" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PGg-dP-uMB">
+                                <rect key="frame" x="50" y="166.66666666666666" width="275" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2J4-QJ-7bk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vk8-3i-T5l" id="i3d-aS-U9f"/>
+                                </connections>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EPQ-AG-XSf">
+                                <rect key="frame" x="187" y="209.66666666666666" width="1" height="1"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="XTr-X5-GGV"/>
+                                    <constraint firstAttribute="width" constant="1" id="sRd-5b-BoZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PGg-dP-uMB" firstAttribute="leading" secondItem="cTx-5t-1sF" secondAttribute="leading" constant="50" id="ASI-oA-2dq"/>
+                            <constraint firstItem="e6Z-ft-JxF" firstAttribute="centerX" secondItem="cTx-5t-1sF" secondAttribute="centerX" id="Ghb-Fy-bky"/>
+                            <constraint firstItem="e6Z-ft-JxF" firstAttribute="top" secondItem="cTx-5t-1sF" secondAttribute="top" constant="110" id="REb-bC-64u"/>
+                            <constraint firstAttribute="trailing" secondItem="tGH-7Z-YpA" secondAttribute="trailing" id="kIU-66-6MK"/>
+                            <constraint firstItem="PGg-dP-uMB" firstAttribute="centerX" secondItem="cTx-5t-1sF" secondAttribute="centerX" id="kTi-DQ-vyS"/>
+                            <constraint firstItem="EPQ-AG-XSf" firstAttribute="centerX" secondItem="cTx-5t-1sF" secondAttribute="centerX" id="vIA-Ct-wGm"/>
+                            <constraint firstItem="EPQ-AG-XSf" firstAttribute="top" secondItem="PGg-dP-uMB" secondAttribute="bottom" constant="13" id="vcc-Xb-sfS"/>
+                            <constraint firstItem="tGH-7Z-YpA" firstAttribute="top" secondItem="cTx-5t-1sF" secondAttribute="top" constant="20" id="yaP-VD-xZO"/>
+                            <constraint firstItem="PGg-dP-uMB" firstAttribute="top" secondItem="e6Z-ft-JxF" secondAttribute="bottom" constant="36" id="yiz-xJ-Hbw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xr4-aY-LM8"/>
+                    <connections>
+                        <outlet property="popoverSourceView" destination="EPQ-AG-XSf" id="46e-Vd-NMp"/>
+                        <outlet property="roomNameTextField" destination="PGg-dP-uMB" id="Dt2-zL-urW"/>
+                        <segue destination="zLs-RV-tPl" kind="show" identifier="mainToLive" id="GlG-46-Ord"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qjO-s8-yWV" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-119" y="80"/>
+        </scene>
+        <!--Live Room View Controller-->
+        <scene sceneID="C2o-9m-sNx">
+            <objects>
+                <viewController id="zLs-RV-tPl" customClass="LiveRoomViewController" customModule="AgoraGroupLive" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KE5-fA-Ltp"/>
+                        <viewControllerLayoutGuide type="bottom" id="WlR-SL-Fle"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X4w-xy-C7d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j4A-c8-veY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nmx-9h-n11">
+                                <rect key="frame" x="0.0" y="812" width="375" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DR8-vf-nMr">
+                                        <rect key="frame" x="157.66666666666666" y="10" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="N9b-nw-IJT"/>
+                                            <constraint firstAttribute="width" constant="60" id="NdT-Nx-Msh"/>
+                                        </constraints>
+                                        <state key="normal" image="hangup"/>
+                                        <connections>
+                                            <action selector="doLeaveButtonPressed:" destination="zLs-RV-tPl" eventType="touchUpInside" id="Xvw-VP-c1j"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="FlA-Ev-T4F"/>
+                                    <constraint firstItem="DR8-vf-nMr" firstAttribute="centerX" secondItem="nmx-9h-n11" secondAttribute="centerX" id="Kqx-mi-wHE"/>
+                                    <constraint firstItem="DR8-vf-nMr" firstAttribute="centerY" secondItem="nmx-9h-n11" secondAttribute="centerY" id="eGn-KB-S7q"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nmx-9h-n11" firstAttribute="leading" secondItem="X4w-xy-C7d" secondAttribute="leading" id="E0l-3c-xWk"/>
+                            <constraint firstAttribute="trailing" secondItem="nmx-9h-n11" secondAttribute="trailing" id="Ej7-Bp-Nwq"/>
+                            <constraint firstAttribute="bottom" secondItem="nmx-9h-n11" secondAttribute="bottom" constant="-80" id="W0F-8C-8dU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bigSessionContainView" destination="j4A-c8-veY" id="fE4-bE-gRf"/>
+                        <outlet property="buttonBarView" destination="nmx-9h-n11" id="l44-xa-jlj"/>
+                        <outlet property="leaveButton" destination="DR8-vf-nMr" id="1Lk-Qv-Uo6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kan-5L-ghO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="676" y="79.610194902548727"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_setting" width="16" height="16"/>
+        <image name="hangup" width="128" height="128"/>
+    </resources>
+</document>
